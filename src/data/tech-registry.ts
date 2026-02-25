@@ -114,6 +114,7 @@ const TECH_REGISTRY = {
   'DigitalOcean': { color: '#0080FF' },
   'Nginx': { color: '#009639' },
   'Linux': { color: '#FCC624' },
+  'Proxmox': { color: '#e57000' },
 
   // ===== CSS & UI =====
   'Tailwind CSS': { color: '#06B6D4' },
@@ -183,6 +184,12 @@ const TECH_REGISTRY = {
   'JSP': { color: '#007396' },
   'JSF': { color: '#007396' },
   'jQuery': { color: '#0769AD' },
+
+  // ===== Audiovisual ======
+  'Audio': { color: '#28d6ec' },
+  'Lighting': { color: '#fdf913' },
+  'Video': { color: '#fa5c5c' },
+  'Streaming': { color: '#8642ec' },
 } as const satisfies Record<string, { color: string }>
 
 export type TechName = keyof typeof TECH_REGISTRY
