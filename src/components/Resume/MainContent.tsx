@@ -37,8 +37,27 @@ export function MainContent() {
         )}
       </div>
 
-      {/* Experiences */}
+      {/* Education */}
       <div className="relative">
+        <h2 className="text-sm font-bold tracking-widest text-resume-text mb-4 pb-2 border-b border-resume-primary/20">
+          {resolve(labels.sections.education)}
+        </h2>
+        <div className="space-y-4">
+          {education.map((edu, i) => (
+            <EducationItem
+              key={`${resolve(edu.school)}-${resolve(edu.degree)}-${edu.period ?? i}`}
+              school={resolve(edu.school)}
+              degree={resolve(edu.degree)}
+              specialty={edu.specialty ? resolve(edu.specialty) : undefined}
+              period={edu.period}
+              logo={edu.logo}
+            />
+          ))}
+        </div>
+      </div>
+
+      {/* Experiences */}
+      <div className="mt-4">
         <h2 className="text-sm font-bold tracking-widest text-resume-text mb-3 pb-2 border-b border-resume-primary/20">
           {resolve(labels.sections.experience)}
         </h2>
@@ -145,25 +164,6 @@ export function MainContent() {
           </div>
         </div>
       )}
-
-      {/* Education */}
-      <div className="mt-2">
-        <h2 className="text-sm font-bold tracking-widest text-resume-text mb-4 pb-2 border-b border-resume-primary/20">
-          {resolve(labels.sections.education)}
-        </h2>
-        <div className="space-y-4">
-          {education.map((edu, i) => (
-            <EducationItem
-              key={`${resolve(edu.school)}-${resolve(edu.degree)}-${edu.period ?? i}`}
-              school={resolve(edu.school)}
-              degree={resolve(edu.degree)}
-              specialty={edu.specialty ? resolve(edu.specialty) : undefined}
-              period={edu.period}
-              logo={edu.logo}
-            />
-          ))}
-        </div>
-      </div>
     </div>
   )
 }

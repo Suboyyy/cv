@@ -7,8 +7,8 @@ export const resumeConfig: ResumeConfig = {
     photo: '/images/fader.png', // Place your photo in public/images/
     photoBackEmoji: '💻', // Shown when clicking the photo (3D flip)
     title: {
-      en: 'Network and Telecom Engineer',
-      fr: 'Ingénieur Réseau Télécom',
+      en: 'Network and Telecom Engineer - Seeking Internship',
+      fr: 'Ingénieur Réseau Télécom - Recherche de stage',
     },
     subtitle: {
       en: '3rd-year student at the University of Technology of Troyes, specializing in Network and Telecom. I manage my school’s student information system and am eager to develop my skills through courses, associations, and personal lab projects. Currently seeking a 6-month internship as an apprentice engineer to deepen my skills.',
@@ -48,7 +48,6 @@ export const resumeConfig: ResumeConfig = {
       title: { en: 'Languages', fr: 'Langues' },
       type: 'languages',
       items: [
-        { name: { en: 'French', fr: 'Français' }, level: { en: 'Native', fr: 'Natif' } },
         { name: { en: 'English', fr: 'Anglais' }, level: { en: 'Professional', fr: 'Professionnel' }, details: 'Linguaskill B2+' },
       ],
     },
